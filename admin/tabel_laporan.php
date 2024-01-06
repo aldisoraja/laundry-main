@@ -58,7 +58,7 @@
   <div class="card shadow-sm ">
        <div class="card-header">
         <a href="laporan_transaksi.php" target="_blank" type="button" class="btn btn-success" style="margin-left: 1020px">
-        <i class="fa-solid fa-print"></i> Print</a>
+        <i class="fa-solid fa-print fa-bounce"></i> Print</a>
         </div>
         <div class="card-body table-responsive" >
           <table id="table" class="table table-bordered display">

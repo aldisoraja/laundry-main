@@ -97,8 +97,8 @@
 									  </div> -->
 								</div>
 									  <div class="mt-3">
-									  	<button type="submit" class="btn btn-warning btn-sm"><i class="fa-solid fa-magnifying-glass"></i> Cari</button>
-									  	<button type="submit" class="btn btn-danger btn-sm"><i class="fa-regular fa-trash-can"></i> Clear</button>
+									  	<button type="submit" class="btn btn-warning btn-sm"><i class="fa-solid fa-magnifying-glass fa-bounce"></i> Cari</button>
+									  	<button type="submit" class="btn btn-danger btn-sm"><i class="fa-regular fa-trash-can fa-bounce"></i> Clear</button>
 										</form>	
 									  </div>
 							</div>
@@ -185,7 +185,7 @@
 										</tbody>
 									</table>
 											<div class="modal-footer">      
-												<button type="submit" name="transaksi" class="btn btn-success btn-sm"><i class="fa-solid fa-floppy-disk"></i> Simpan</button>
+												<button type="submit" name="transaksi" class="btn btn-success btn-sm"><i class="fa-solid fa-floppy-disk fa-bounce"></i> Simpan</button>
 											</div>
 								</form>
 								</div>
@@ -265,7 +265,7 @@
 										<td><?=$data['biaya_antar']?></td>
 										<td><?=$data['total']?></td>
 										<td>
-											<a href="hapus_transaksi.php?id=<?= $data['id_detail_transaksi'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash"></i></a>
+											<a href="hapus_transaksi.php?id=<?= $data['id_detail_transaksi'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash fa-beat"></i></a>
 										</td>
 									</tr>
 									<?php 

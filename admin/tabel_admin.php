@@ -87,7 +87,7 @@ if (isset($_POST['simpan'])) {
 
 					   	<!-- Button trigger modal -->
 					   	<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#aksi">
-							<i class="fa-solid fa-plus"></i> Tambah User
+							<i class="fa-solid fa-plus fa-bounce"></i> Tambah User
 						</button>
 			  </div>
 
@@ -155,7 +155,7 @@ if (isset($_POST['simpan'])) {
 											</div>
 							      	</div>
 							     	 <div class="modal-footer">
-								        <button type="submit" name="simpan" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Simpan</button>
+								        <button type="submit" name="simpan" class="btn btn-success"><i class="fa-solid fa-floppy-disk fa-beat"></i> Simpan</button>
 								        </form>
 				      				</div>
 				    </div>
@@ -192,10 +192,10 @@ if (isset($_POST['simpan'])) {
 									<td><?=$data['level']?></td>
 									<td> 
 									<!-- Modal Button Ubah Start -->
-										<a type="button" data-bs-target="#ubah<?= $data['id_daftar'];?>" class="btn btn-warning btn-sm" data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i></i></a>								
+										<a type="button" data-bs-target="#ubah<?= $data['id_daftar'];?>" class="btn btn-warning btn-sm" data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square fa-beat"></i></i></a>								
 										<!-- Modal Button Ubah End -->
 
-										<a href="pelanggan/hapus_admin.php?id=<?= $data['id_daftar'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash"></i></a>	
+										<a href="pelanggan/hapus_admin.php?id=<?= $data['id_daftar'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash fa-beat"></i></a>	
 									</td>
 									</tr>
 									<!-- Modal Edit Start -->

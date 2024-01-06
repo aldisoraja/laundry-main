@@ -98,55 +98,16 @@
 							if(mysqli_num_rows($sql_daftar) > 0){
 								while($data = mysqli_fetch_array($sql_daftar)){ ?>
 									<tr>
-									<td><?=$no++?></td>
-									<td><?=$data['nama_pelanggan']?></td>
-									<td><?=$data['username']?></td>
-									<td><?=$data['kontak_pelanggan']?></td>
-									<td><?=$data['alamat_pelanggan']?></td>
-									<td><?=$data['level']?></td>
-									<td> 
-									<!-- Modal Button Ubah Start -->
-										<a href="pelanggan/hapus_pelanggan.php?id=<?= $data['id_daftar'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash"></i></a>	
-									</td>
+										<td><?=$no++?></td>
+										<td><?=$data['nama_pelanggan']?></td>
+										<td><?=$data['username']?></td>
+										<td><?=$data['kontak_pelanggan']?></td>
+										<td><?=$data['alamat_pelanggan']?></td>
+										<td><?=$data['level']?></td>
+										<td> 
+											<a href="pelanggan/hapus_pelanggan.php?id=<?= $data['id_daftar'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash fa-beat"></i></a>	
+										</td>
 									</tr>
-									<!-- Modal Edit Start -->
-									  	<div class="modal fade" id="ubah<?=$data['id_daftar'];?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										  <div class="modal-dialog">
-										    <div class="modal-content">
-										      <div class="modal-header text-white bg-secondary">
-										        <h5 class="modal-title" id="exampleModalLabel">Ubah Pegawai</h5>
-										        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										      </div>
-										      			<div class="modal-body">
-										      	<!-- <div class="form-group"> -->
-
-													    <form action="pelanggan/ubah_pelanggan.php" method="POST">
-													       <input type="hidden" name="id_daftar" value="<?= $data['id_daftar']; ?>">
-													       <input type="text" placeholder="Masukkan Nama" name="nama" value="<?=$data['nama_pelanggan'];?>" class="form-control mb-3" required>
-													       <input type="text" placeholder="Masukkan Username" name="username" value="<?=$data['username'];?>" class="form-control mb-3" required>
-													       <input type="password" placeholder="Masukkan Password" name="pass" value="<?=$data['password_pelanggan'];?>" class="form-control mb-3" required>
-													       <input type="text" placeholder="Masukkan Kontak/ No.HP" name="kontak" value="<?=$data['kontak_pelanggan'];?>" class="form-control mb-3" required>
-													       <input type="text" placeholder="Masukkan Alamat" name="alamat" value="<?=$data['alamat_pelanggan'];?>" class="form-control mb-3" required>
-													       <select name="level" value="<?=$data['level'];?>" class="form-select" aria-label="Default select example">
-													       	<option value="admin" >Admin</option>
-													       	<option value="pegawai" disabled>Pegawai</option>      	
-													       	<option value="pelanggan"disabled>Pelanggan</option>
-
-													       	</select>
-													       	
-													      <!--  </div> -->
-													      </div>
-													      <div class="modal-footer">
-													       
-													        <button type="submit" name="ubah" class="btn btn-primary">Ubah</button>
-													        </form>
-													      
-										      			</div>
-										    </div>
-										  </div>
-										</div>
-
-									<!-- Modal Edit End -->
 								<?php
 								}
 							}else {

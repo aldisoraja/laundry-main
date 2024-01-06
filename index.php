@@ -71,7 +71,7 @@ if (isset($_POST['daftar'])) {
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header text-white bg-secondary">
-                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-users-gear"></i> Daftar</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-users-gear fa-bounce"></i> Daftar</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                                     <div class="modal-body mb-2">
@@ -124,7 +124,7 @@ if (isset($_POST['daftar'])) {
                                     </div>
                                      <div class="modal-footer">
                                    
-                                        <button type="submit" name="daftar" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Daftar</button>
+                                        <button type="submit" name="daftar" class="btn btn-success"><i class="fa-solid fa-floppy-disk fa-shake"></i> Daftar</button>
                                         </form>
                                     </div>
                     </div>
@@ -136,7 +136,7 @@ if (isset($_POST['daftar'])) {
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header text-white bg-secondary">
-                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-users"></i> Masuk</h5>
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-users fa-bounce"></i> Masuk</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                                     <div class="modal-body mb-2">
@@ -164,7 +164,7 @@ if (isset($_POST['daftar'])) {
                                     </div>
                                      <div class="modal-footer">
                                    
-                                        <button type="submit" name="login" class="btn btn-success"><i class="fa-solid fa-right-to-bracket"></i> Masuk</button>
+                                        <button type="submit" name="login" class="btn btn-success"><i class="fa-solid fa-right-to-bracket fa-shake"></i> Masuk</button>
                                         </form>
                                     </div>
                     </div>

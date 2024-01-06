@@ -99,7 +99,7 @@
 									<td><?=$data['status']?></td>
 									<td> 
 									<!-- Modal Button Ubah Start -->
-										<a type="button" data-bs-target="#ubah<?= $data['id_boking'];?>" class="btn btn-warning btn-sm" data-bs-toggle="modal" ><i class="fa-solid fa-pen-to-square"></i></a>								
+										<a type="button" data-bs-target="#ubah<?= $data['id_boking'];?>" class="btn btn-warning btn-sm" data-bs-toggle="modal" ><i class="fa-solid fa-pen-to-square fa-beat"></i></a>								
 										<!-- Modal Button Ubah End -->
 										<!-- <a href="pelanggan/hapus_pesanan.php?id=<?= $data['id_boking'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash"></i></a>	 -->
 									</td>

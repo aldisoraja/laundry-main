@@ -62,7 +62,7 @@
        <div class="card-header">
           <!-- <p>Pemesanan</p> -->
           <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_pesanan"><i class="fa-solid fa-plus"></i>
+              <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_pesanan"><i class="fa-solid fa-plus fa-bounce"></i>
                Tambah Pesanan
             </button>
         </div>
@@ -95,7 +95,7 @@
                    
                       </div>
                       <div class="modal-footer">
-                        <button type="submit" id="pesan" name="pesan" class="btn btn-success btn-sm"><i class="fa-solid fa-floppy-disk"></i> Simpan</button>
+                        <button type="submit" id="pesan" name="pesan" class="btn btn-success btn-sm"><i class="fa-solid fa-floppy-disk fa-beat"></i> Simpan</button>
                         </form>
                       </div>
             </div>
@@ -126,7 +126,7 @@
                   <td><?php echo date("d-m-Y", strtotime($data['tgl_pemesanan'])) ?></td>
                    <td><?=$data['status']?></td>
                    <td>
-                   <a href="hapus_boking.php?id=<?= $data['id_boking'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash"></i></a>
+                   <a href="hapus_boking.php?id=<?= $data['id_boking'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Hapus?')"><i class="fa-solid fa-trash fa-beat"></i></a>
                   </td>
                 </tr>
                    <?php
